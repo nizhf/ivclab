@@ -143,3 +143,6 @@ dmypy.json
 *.h5
 *.tar
 *.tar.gz
+
+# IVC Lab special
+data/
