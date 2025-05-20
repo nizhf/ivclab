@@ -11,9 +11,9 @@ def yuv420compression(image: np.ndarray):
         C. Crop the image 2 pixels from each side to get rid of padding
     3. Apply rounding to Y, Cb and Cr channels
     4. Decompress the image
-        A. Pad the image with 4 pixels symmetric pixels on each side
+        A. Pad the image with 2 pixels symmetric pixels on each side
         B. Upsample Cb and Cr channels (use scipy.signal.resample for it)
-        C. Crop the image 2 pixels from each side to get rid of padding
+        C. Crop the image 4 pixels from each side to get rid of padding
     5. Convert the YCbCr image back to RGB
 
     image: np.array of shape [H, W, C]
